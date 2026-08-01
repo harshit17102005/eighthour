@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F9F5EC;
+  --color-secondary: #F0E9DB;
+  --color-light: #FDFCF9;
+  --color-ink: #1A1815;
+  --color-ink-muted: #6B655D;
+  --color-surface-border: #E6DFD1;
+  --color-accent: #211E1A;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-slab: "Roboto Slab", serif;
+  --font-cinzel: "Cinzel", serif;
+}
+
+@layer base {
+  html, body {
+    background-color: var(--color-primary);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    color: var(--color-ink);
+  }
+
+  ::selection {
+    background-color: var(--color-ink);
+    color: var(--color-primary);
+  }
+}
+
+@layer utilities {
+  .effect-3d {
+    filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.2)) drop-shadow(2px 2px 0px rgba(0,0,0,0.15)) drop-shadow(3px 3px 4px rgba(0,0,0,0.15));
+  }
+}
