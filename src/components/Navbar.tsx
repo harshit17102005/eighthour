@@ -76,7 +76,7 @@ export default function Navbar() {
         <div className="flex-1 md:flex-none flex justify-center items-center">
           <Link
             to="/"
-            className="flex items-center gap-3 md:gap-4 group hover:opacity-80 transition-opacity"
+            className="flex items-center gap-3 md:gap-4 group transition-colors duration-300"
           >
             <span className={logoTextClass}>EIGHTH</span>
             <LogoGraphic className={logoGraphicClass} />

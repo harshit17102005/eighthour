@@ -60,11 +60,11 @@ export default function Home() {
         sizes={[60, 125, 75]}
         innerSizes={[0, 0, 0]}
         innerColor="transparent"
-        opacities={[0.6, 0.6, 0.6]}
-        shadowColor="rgba(0,0,0,0.75)"
-        shadowBlur={5}
-        shadowOffsetX={10}
-        shadowOffsetY={10}
+        opacities={[1, 1, 1]}
+        shadowColor="transparent"
+        shadowBlur={0}
+        shadowOffsetX={0}
+        shadowOffsetY={0}
         filterStdDeviation={30}
         useFilter={true}
         fastDuration={0.1}
@@ -84,7 +84,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-            className="max-w-xl text-primary mt-24 md:mt-0 z-10 flex-1"
+            className="max-w-xl text-primary mt-24 md:mt-0 z-10 flex-1 relative z-20"
           >
             <h1 className="text-5xl md:text-6xl lg:text-7xl mb-8 leading-[1.1] font-serif text-white tracking-wide">
               The Art of <br />
@@ -95,7 +95,7 @@ export default function Home() {
             </p>
             <Link 
               to="/shop" 
-              className="text-xs md:text-sm tracking-widest uppercase border-b border-white/50 hover:border-white pb-2 transition-colors duration-500 text-white"
+              className="text-xs md:text-sm tracking-widest uppercase border-b border-white/50 hover:border-white pb-2 text-white"
             >
               Explore Collection &rarr;
             </Link>

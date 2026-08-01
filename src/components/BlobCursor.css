@@ -18,9 +18,8 @@
   background: transparent;
   user-select: none;
   cursor: default;
-  opacity: 0.45;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  opacity: 0.8;
+  mix-blend-mode: normal;
 }
 
 .blob {
